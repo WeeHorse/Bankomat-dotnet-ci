@@ -55,7 +55,7 @@ namespace Bankomat_tests
 
         [Theory]
 		[InlineData("1234", "Incorrect pin")]
-        [InlineData("0123", "Correct pin")]
+        [InlineData("0125", "Correct pin")]
 		public void enterPin(string pin, string expectedMessage)
 		{
             bankomat.insertCard(card);
